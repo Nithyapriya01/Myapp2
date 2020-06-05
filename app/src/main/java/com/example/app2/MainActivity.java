@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Btn1 = findViewById(R.id.btnAdd);
         Btn2 = findViewById(R.id.btnView);
+        myDb = new DatabaseHelper(this);
         viewAll();
 
         Btn1.setOnClickListener(new View.OnClickListener() {
